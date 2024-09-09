@@ -1,0 +1,81 @@
+body{
+  background-image: url("media/pexels-asadphoto-1024984.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: verdana;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav a{
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 2px solid white;
+  padding: 8px 10px;
+  padding-top: 4px;
+}
+#main p{
+  width: 380px;
+  color: white;
+}
+#main{
+  text-align: center;
+}
+#message, #back, #next{
+  padding: 10px;
+  background:transparent;
+  color: green;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid green;
+  cursor: pointer;
+}
+#message:hover, #back:hover, #next:hover, #click:hover{
+  border: 2px solid pink;
+  color: pink;
+}
+#content{
+  display: none;
+  animation: 2s fadeIn forwards;
+  width: 300px;
+  color: white;
+}
+@keyframes fadeIn{
+  from{ opacity: 0 }
+  to{ opacity: 1 }
+}
+#content2{
+  display: none;
+}
+#click{
+  margin-top: 150px;
+  padding: 10px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid green;
+  color: green;
+  animation-name: grow;
+  animation-iteration-count: 2;
+  animation-duration: 3s;
+}
+@keyframes grow{
+  50%{transform: scale(2, 2)}
+}
+#miss{
+  animation: 10s fadeIn forwards;
+  display: none;
+  text-align: center;
+}
+#miss h2{
+  color:white;
+  font-weight: bold;
+}
+#miss img{
+  border-radius: 10px;
+  border: 3px solid pink;
+}
